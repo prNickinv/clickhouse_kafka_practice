@@ -40,6 +40,7 @@ def send_csv_to_kafka():
         print(f"Error: {e}")
     finally:
         producer.close()
+        time.sleep(5)
 
 if __name__ == '__main__':
     try:
